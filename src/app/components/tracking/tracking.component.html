@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="overlay" [ngClass]="color">
+    <img class="card-img-top z-index-2" [src]="ImageSource" alt="Card image cap">
+
+  </div>
+  <div class="card-body">
+    <div class=" d-flex justify-content-between mb-4">
+      <h5>{{title}}</h5>
+      <a><img src="../../../assets/images/icon-ellipsis.svg" alt="icon-ellipsis"></a>
+    </div>
+    <div class="text d-flex flex-md-column justify-content-between align-items-center align-items-md-start">
+      <h1 class="m-0">{{current+'hrs'}}</h1>
+      <p class="m-0">{{'last week - '+previous+'hrs'}}</p>
+    </div>
+  </div>
+</div>
